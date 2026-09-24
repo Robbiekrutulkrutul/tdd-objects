@@ -11,7 +11,7 @@
  * getCohort({cohort: 3476, name: "Charlie"}); // 3476
  */
 export function getCohort(student) {
-  // TODO
+  return student.cohort;
 }
 
 /**
@@ -30,7 +30,11 @@ export function getCohort(student) {
  * sortStudents({cohort: 1, name: "Alice"}, {cohort: 2, name: "Alice"}); // {cohort: 1, name: "Alice"}
  */
 export function sortStudents(studentA, studentB) {
-  // TODO
+  if (studentA.name <= studentB.name) {
+    return studentA;
+  } else {
+    return studentB;
+  }
 }
 
 /**
@@ -47,7 +51,7 @@ export function sortStudents(studentA, studentB) {
  * makeFlag("yellow", "triangle"); // { color: "yellow", icon: "triangle" }
  */
 export function makeFlag(color, icon) {
-  // TODO
+  return { color, icon };
 }
 
 /**
